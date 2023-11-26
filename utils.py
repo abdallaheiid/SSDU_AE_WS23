@@ -1,5 +1,5 @@
 import numpy as np
-from skimage.measure import compare_ssim
+from skimage.metrics import structural_similarity
 
 
 def get_train_directory(args):
@@ -84,7 +84,7 @@ def getSSIM(space_ref, space_rec):
     space_rec = space_rec / np.amax(np.abs(space_ref))
     data_range = np.amax(np.abs(space_ref)) - np.amin(np.abs(space_ref))
 
-    return compare_ssim(space_rec, space_ref, data_range=data_range,
+    return structural_similarity(space_rec, space_ref, data_range=data_range,
                         gaussian_weights=True,
                         use_sample_covariance=False)
 

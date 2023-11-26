@@ -29,8 +29,8 @@ test_graph_generator = tf_utils.test_graph(directory)
 #...........................................................................d....
 start_time = time.time()
 print('.................SSDU Training.....................')
-tf.reset_default_graph()
-config = tf.ConfigProto()
+tf.compat.v1.reset_default_graph()
+config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True
 config.allow_soft_placement = True
 
