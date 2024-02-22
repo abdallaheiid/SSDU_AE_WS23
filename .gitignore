@@ -7,3 +7,6 @@ masks/__pycache__/__init__.cpython-38.pyc
 masks/__pycache__/ssdu_masks.cpython-38.pyc
 models/__pycache__/networks.cpython-38.pyc
 models/__pycache__/__init__.cpython-38.pyc
+saved_models/SSDU_Coronal_PD_100Epochs_Rate4_10Unrolls_GaussianSelection/model_test.data-00000-of-00001
+saved_models/SSDU_Coronal_PD_100Epochs_Rate4_10Unrolls_GaussianSelection/model_test.index
+saved_models/SSDU_Coronal_PD_100Epochs_Rate4_10Unrolls_GaussianSelection/model_test.meta
